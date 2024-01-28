@@ -1,0 +1,22 @@
+body{
+    background-color: #b0e0e6;
+    margin: 10px 30px;
+    }
+
+h1  {
+    color:#0000ff;
+    }
+
+p   {
+    color:#ff6347;
+    }
+
+button {
+        background-color:#ff6347;
+        color:#ffffff;
+        padding:20px 50px; 
+        border: none;
+        border-radius: 5px;
+  
+        
+    }
