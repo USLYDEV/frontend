@@ -51,6 +51,6 @@ a:hover{
 }
 
 a:active{
-    colorH: green;
+    colorH: #008000;
     text-decoration: underline;
 }
