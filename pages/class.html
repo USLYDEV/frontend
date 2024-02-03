@@ -43,7 +43,17 @@
     <h1>My <span class="note">Important</span> Heading</h1>
     <p>This is some <span class="note">important</span> text.</p>
 
+   <button onclick="myFunction()">Hide elements</button>
 
+    <script>
+
+        function myFunction () {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
 
 
 
