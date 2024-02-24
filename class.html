@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class  attribute</title>
+</head>
+<style>
+    .city{
+        background-color: tomato;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+    }
+    .note{
+        font-size: 120%;
+        color: red;
+    }
+</style>
+<body>
+
+
+    <!--City Class-->
+   <div class="city">
+        <div>
+            <h2>London</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, perspiciatis.</p>
+        </div>
+
+        <div>
+            <h2>Paris</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, perspiciatis.</p>
+        </div>
+
+        <div>
+            <h2>Tokyo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, perspiciatis.</p>
+        </div>
+   </div>
+    
+   <!--Note class-->
+
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+
+   <button onclick="myFunction()">Hide elements</button>
+
+    <script>
+
+        function myFunction () {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
