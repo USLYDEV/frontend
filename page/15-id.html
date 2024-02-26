@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+</head>
+
+<style>
+   /* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+<body>
+
+
+    <!--Working with id-->
+        <!--
+            The id attribute specifies a unique id for an HTML element. 
+            The value of the id attribute must be unique 
+            within the HTML document.
+        -->
+    
+        <h1 id="myHeader">My Header</h1>
+
+        <!--
+            Difference Between Class and ID
+            A class name can be used by multiple HTML elements, 
+            while an id name must only be used by one HTML 
+            element within the page:
+        -->
+
+            <!--Call bookmark for chapter for-->
+                <a href="#C4">Jump to Chapter 4</a>
+
+        <!-- An element with a unique id -->
+            <h1 id="myHeader">My Cities</h1>
+
+            <!-- Multiple elements with same class -->
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+
+            <!--Bookmark-->
+            <!--HTML bookmarks are used to allow readers to jump to specific parts of a webpage.-->
+
+            <h2 id="C4">Chapter 4</h2>
+
+           <!-- id attribute in JS-->
+           <!--JavaScript can access an element with a specific id 
+            with the getElementById() method:-->
+
+            <h1 id="myHeader">Hello World!</h1>
+                 <button onclick="displayResult()">Change text</button>
+
+            <script>
+                function displayResult() {
+                  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+                }
+                </script>
+
+                
+
+        </body>
+</html>
