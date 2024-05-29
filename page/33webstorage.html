@@ -25,7 +25,7 @@
 
     //Retrieve
     document.GetElementById("result").innerHTML = localStorage.lastname
-
+    localStorage.removeItem("lastname");
 
     //Storage Test 
 
@@ -51,5 +51,19 @@
         <p>Click the button to see the counter increase.</p>
         <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
     
+
+                <!-- The sessionStorage Object
+        The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.
+
+        The following example counts the number of times a user has clicked a button, in the current session: -->
+
+        <!-- Example -->
+        if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+        } else {
+        sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " +
+        sessionStorage.clickcount + " time(s) in this session.";
 </body>
 </html>
