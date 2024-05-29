@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        <!-- Server-Sent Events - One Way Messaging
+    A server-sent event is when a web page automatically gets updates from a server.
+
+    This was also possible before, but the web page would have to ask if any updates were available. With server-sent events, the updates come automatically.
+
+    Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc. -->
+
+
+
+    <h1>Getting server updates</h1>
+<div id="result"></div>
+
+<script>
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + "<br>";
+  };
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+}
+</script>
+
+
+</body>
+</html>
